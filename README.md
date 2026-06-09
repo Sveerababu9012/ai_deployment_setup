@@ -1,3 +1,3 @@
 # AI Deployment Setup Project
 
-This is a practice repository for setting up AI deployment environments.
+This is a practice repository for setting up AI deployment environments By Veeru.
