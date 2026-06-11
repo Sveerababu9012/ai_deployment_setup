@@ -1,14 +1,11 @@
 import pandas as pd
 
-
 def clean_dataframe(df: pd.DataFrame, columns_to_fill_mean: list) -> pd.DataFrame:
     df_cleaned = df.copy()
 
     for col in columns_to_fill_mean:
         if col in df_cleaned.columns:
             mean_value = df_cleaned[col].mean()
-
-            # FIX
             df_cleaned[col] = df_cleaned[col].fillna(mean_value)
 
     return df_cleaned
