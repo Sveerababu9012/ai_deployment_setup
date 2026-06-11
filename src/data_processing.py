@@ -2,9 +2,6 @@ import pandas as pd
 
 
 def clean_dataframe(df: pd.DataFrame, columns_to_fill_mean: list) -> pd.DataFrame:
-    """
-    Fill missing values in specified columns with column mean.
-    """
     df_cleaned = df.copy()
 
     for col in columns_to_fill_mean:
@@ -16,9 +13,6 @@ def clean_dataframe(df: pd.DataFrame, columns_to_fill_mean: list) -> pd.DataFram
 
 
 def normalize_column(df: pd.DataFrame, column_name: str) -> pd.DataFrame:
-    """
-    Normalize column values between 0 and 1.
-    """
     df_normalized = df.copy()
 
     if column_name in df_normalized.columns:
